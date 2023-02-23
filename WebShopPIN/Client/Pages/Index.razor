@@ -1,0 +1,18 @@
+﻿@page "/"
+@page "/{brandUrl}"
+@inject IProductService ProductService
+
+@*Početna stranica koja koristi mainlayout*@
+
+<PageTitle>Luxury Watches</PageTitle>
+
+<ProductList />
+
+@code {
+    [Parameter]
+    public string? BrandUrl { get; set; } = null;
+    protected override async Task OnParametersSetAsync()
+    {
+        await ProductService.GetProducts(BrandUrl);
+    }
+}

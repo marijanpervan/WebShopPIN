@@ -1,0 +1,48 @@
+﻿.container{
+    display:flex;
+    padding: 6px;
+    border:solid 1px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.image-wrapper {
+    width: 150px;
+    text-align: center;
+}
+
+.image{
+    max-height: 150px;
+    max-width: 150px;
+    padding: 5px;
+}
+.name {
+    flex-grow: 1;
+    padding: 6px;
+}
+.cart-product-price {
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:right;
+}
+.cart-product-price span {
+    color: green;
+    padding: 20px;
+}
+.btn-delete{
+    background:red;
+    border:none;
+    padding: 5px;
+    border-radius: 10px;
+    color:white;
+    font-size:15px;
+    float:right;
+}
+.btn-delete:hover {
+     border:solid 1px;
+     border-color: red;
+}
+
+.input-quantity {
+    width: 70px;
+}
